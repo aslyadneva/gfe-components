@@ -12,7 +12,7 @@ interface AccordionProps {
 export const Accordion = ({ sections }: AccordionProps) => {
   const [openSections, setOpenSections] = React.useState(new Set());
 
-  console.log("openSections", openSections);
+  // console.log("openSections", openSections);
 
   const handleClick = (value: string) => {
     const newOpenSections = new Set(openSections);
